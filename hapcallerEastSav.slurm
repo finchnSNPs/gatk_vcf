@@ -7,8 +7,6 @@
 #SBATCH --ntasks-per-node=10
 #SBATCH --mem=120GB
 #SBATCH --time=20-00:00:00
-#SBATCH --mail-type=ALL
-#SBATCH --mail-user=khan3@uw.edu
 #SBATCH -o logfiles/ESavHapCaller.%j.out
 #SBATCH -e logfiles/ESavHapCaller.%j.err
 
