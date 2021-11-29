@@ -7,8 +7,6 @@
 #SBATCH --ntasks-per-node=12
 #SBATCH --mem=120GB
 #SBATCH --time=20-00:00:00
-#SBATCH --mail-type=ALL
-#SBATCH --mail-user=khan3@uw.edu
 #SBATCH -o logfiles/WForHapCaller.%j.out
 #SBATCH -e logfiles/WForHapCaller.%j.err
 
