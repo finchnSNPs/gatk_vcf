@@ -7,8 +7,6 @@
 #SBATCH --ntasks-per-node=16
 #SBATCH --mem=30G
 #SBATCH --time=4-00:00:00
-#SBATCH --mail-type=ALL
-#SBATCH --mail-user=khan3@uw.edu
 #SBATCH -o logfiles/bwamem.%j.out
 #SBATCH -e logfiles/bwamem.%j.err
 
