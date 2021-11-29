@@ -7,8 +7,6 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=10GB
 #SBATCH --time=48:00:00
-#SBATCH --mail-type=ALL
-#SBATCH --mail-user=khan3@uw.edu
 #SBATCH -o logfiles/createseqdict.%j.out
 #SBATCH -e logfiles/createseqdict.%j.err
 
