@@ -1,5 +1,6 @@
 # gatk_vcf
 GATK vcf workflow. UW Biology Wasser Lab.
+Designed specifically to use UW HYAK Klone and SLURM job scheduler. 
 
 Following GATK best practices. 
 
@@ -15,4 +16,5 @@ GenotypeVCFs run in 1kb genomic sections for each chromosome or unknwon chromoso
 4. HaplotypeCaller (hapcallerEastFor.sh; hapcallerNorthSav1.slurm; hapcallerNorthSav2.slurm; hapcallerSouthSav.slurm, hapcallerWestFor.slurm; khan3) performed for each interval. 
 5. Sample maps generated (gnomixdb_mapmaker.sh; finchnSNPs) for each chromosome so that individual gvcfs for each interval can be combined in the GenomicsDB.
 6. GenomicsDB generated for each chromosome (gnotpgvcf.sh; finchnSNPs). 
-7. The GenotypeVCFs step is computationally intensive (especially with pooled data), so it is recommended to run processed on smaller intervals. To this point, we had been using chromosomes as intervals. For this step, we will use distinct 1kb genomic regions as intervals (interval_makers.sh, which calls interval_lists.R)
+7. The GenotypeVCFs step is computationally intensive (especially with pooled data), so it is recommended to run processed on smaller intervals. To this point, we had been using chromosomes as intervals. For this step, we will use distinct 1kb genomic regions as intervals (interval_makers.sh, which calls interval_lists.R; finchnSNPs)
+8. GenotypeVCF on sub-chromosomal intervals at 1kb (gnotpgvcf_chrs.sh; finchnSNPs). This script calls remaining_chr.txt, which was generated with (<TBD>; finchnSNPs)
