@@ -7,8 +7,6 @@
 #SBATCH --ntasks-per-node=7
 #SBATCH --mem=20GB
 #SBATCH --time=7-00:00:00
-#SBATCH --mail-type=ALL
-#SBATCH --mail-user=khan3@uw.edu
 #SBATCH -o logfiles/qualimap.%j.out
 #SBATCH -e logfiles/qualimap.%j.err
 
