@@ -7,8 +7,6 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=8G
 #SBATCH --time=96:00:00
-#SBATCH --mail-type=ALL
-#SBATCH --mail-user=khan3@uw.edu
 #SBATCH -o logfiles/convert.%j.out
 #SBATCH -e logfiles/convert.%j.err
 
