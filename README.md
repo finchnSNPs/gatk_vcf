@@ -2,7 +2,7 @@
 GATK vcf workflow. UW Biology Wasser Lab.
 Designed specifically to use UW HYAK Klone and SLURM job scheduler. 
 
-SUMMARY: Following GATK best practices: Sorted, indexed, BAM files (duplicates markered). Haplotype caller - on a per/individual/per/chromosome basis. Individuals merged by chromosome by generating a Genomics Database. GenotypeVCFs run in 1kb genomic sections for each chromosome or unknwon chromosome contig. 
+SUMMARY: Following GATK best practices: Sorted, indexed, BAM files (duplicates marked). Haplotype caller - on a per/individual/per/chromosome basis. Individuals merged by chromosome by generating a Genomics Database. GenotypeVCFs run in 1kb genomic sections for each chromosome or unknwon chromosome contig. 
 
 "khan3" indicates a script written by Kin
 
