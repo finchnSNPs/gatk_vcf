@@ -7,8 +7,6 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=8G
 #SBATCH --time=12:00:00
-#SBATCH --mail-type=ALL
-#SBATCH --mail-user=khan3@uw.edu
 #SBATCH -o logfiles/indexsort.%j.out
 #SBATCH -e logfiles/indexsort.%j.err
 
