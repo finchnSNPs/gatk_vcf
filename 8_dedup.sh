@@ -7,8 +7,6 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=40GB
 #SBATCH --time=168:00:00
-#SBATCH --mail-type=ALL
-#SBATCH --mail-user=khan3@uw.edu
 #SBATCH -o logfiles/dedup.%j.out
 #SBATCH -e logfiles/dedupp.%j.err
 
