@@ -7,8 +7,6 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=8G
 #SBATCH --time=48:00:00
-#SBATCH --mail-type=ALL
-#SBATCH --mail-user=khan3@uw.edu
 #SBATCH -o logfiles/cutadapt.%j.out
 #SBATCH -e logfiles/cutadapt.%j.err
 
