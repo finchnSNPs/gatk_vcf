@@ -34,7 +34,7 @@ INTS=$(cat $FILE)
 for INT in $INTS; do
 	if test -f "${CHR}/${INT}_merged.vcf.gz.tbi"; then
 		echo "${INT} already done"
-	elif test ! -f "{CHR}/${INT}_merged.vcf.gz.tbi"; then 
+	elif test ! -f "${CHR}/${INT}_merged.vcf.gz.tbi"; then 
 		echo "Processing ${INT}"
 		singularity exec --bind /gscratch /gscratch/wasser/containers/gatk-4.0.2.0.sif gatk --java-options "-Xmx4g" GenotypeGVCFs -R /gscratch/wasser/khan3/elephant_snps/data/reference/loxAfr4/loxAfr4.v2.fasta -V gendb://genomicsdb_${CHR} -L $INT -O ${CHR}/${INT}_merged.vcf.gz
 	fi
